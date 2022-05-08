@@ -110,6 +110,10 @@ PRODUCT_COPY_FILES += \
 #config of display brightness dimming
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.display.brightness.dimming.usage=1
 
+# HBM
+PRODUCT_COPY_FILES += \
+    device/google/raviole/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
+
 # NFC
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
