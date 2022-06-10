@@ -2,16 +2,16 @@
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common StatiX stuff.
-$(call inherit-product, vendor/statix/config/common.mk)
-$(call inherit-product, vendor/statix/config/gsm.mk)
+# Inherit some common crooked stuff.
+$(call inherit-product, vendor/crooked/config/common.mk)
+$(call inherit-product, vendor/crooked/config/gsm.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_oriole_64.mk)
 $(call inherit-product, device/google/raviole/device-statix.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := statix_oriole
+PRODUCT_NAME := crooked_oriole
 PRODUCT_MODEL := Pixel 6
 PRODUCT_BRAND := google
 
@@ -22,3 +22,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/oriole/oriole:12/SQ3A.220605.009.B1/8650216:user/release-keys
 
 $(call inherit-product, vendor/google/oriole/oriole-vendor.mk)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
