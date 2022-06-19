@@ -2,6 +2,9 @@
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
+# Faceunlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Inherit some common crooked stuff.
 $(call inherit-product, vendor/crooked/config/common.mk)
 $(call inherit-product, vendor/crooked/config/gsm.mk)
