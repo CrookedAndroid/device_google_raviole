@@ -15,11 +15,11 @@
 # limitations under the License.
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=7192822
+BUILD=eng.nobody
 DEVICE=oriole
-PRODUCT=oriole
-VERSION=SD1A.210308.004
-SRCPREFIX=signed-
+PRODUCT=crooked_oriole
+VERSION=Q3A.220605.009.B1
+SRCPREFIX=../../../../out/target/product/oriole/obj/PACKAGING/target_files_intermediates/
 BOOTLOADER=slider-1.0-7187550
-RADIO=g5123x-76938-210114-B-7081606|g5123b-80386-210305-B-7187092
+RADIO=g5123b-80386-210305-B-7187092
 source ../../../common/generate-factory-images-common.sh
