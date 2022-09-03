@@ -9,6 +9,9 @@ $(call inherit-product, vendor/crooked/config/gsm.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven_64.mk)
 
+# Parts
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := crooked_raven
 PRODUCT_MODEL := Pixel 6 Pro
