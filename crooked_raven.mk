@@ -26,3 +26,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="raven-user 13 TP1A.220624.021 8877034 release-keys"
 
 BUILD_FINGERPRINT := $(PRODUCT_OVERRIDE_FINGEPRINT)
+
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
